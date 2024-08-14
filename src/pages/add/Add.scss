@@ -1,0 +1,81 @@
+.add {
+  display: flex;
+  justify-content: center;
+  background: url('./img/fd.jpg') no-repeat center center fixed; 
+  background-size: cover;
+  min-height: 100vh; /* Ensure the background covers the entire viewport */
+  
+  .container {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 1200px; /* Optional: Set a max-width to prevent stretching */
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border-radius: 15px; /* Rounded corners for the glass effect */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    
+    h1 {
+      margin-bottom: 30px;
+      color: white;
+      font-weight: 300;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for the heading */
+      padding: 10px;
+      border-radius: 10px;
+    }
+    
+    .contag {
+      background-color: black;
+      color: white;
+      width: fit-content;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px; /* Rounded corners */
+    }
+    
+    .sections {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px; /* Adjust the gap as needed */
+
+      label {
+        color: white; /* Change label color for better visibility */
+        font-size: 18px;
+      }
+
+      .info,
+      .details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+        input,
+        select,
+        textarea {
+          padding: 15px;
+          border-radius: 10px;
+          border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for input fields */
+          background: rgba(255, 255, 255, 0.3); /* Slightly transparent background */
+          color: black; /* Text color inside inputs */
+        }
+
+        button {
+          border: none;
+          padding: 15px;
+          color: white;
+          font-weight: 500;
+          font-size: 18px;
+          background-color: #bf1d1d;
+          cursor: pointer;
+          border-radius: 25px;
+          transition: background-color 0.3s ease;
+          
+          &:hover {
+            background-color: #a61a1a; /* Slightly darker red on hover */
+          }
+        }
+      }
+    }
+  }
+}

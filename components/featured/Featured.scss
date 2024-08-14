@@ -1,0 +1,121 @@
+.featured {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: relative;
+  /* Add your background image here */
+  background-image: url('./img/hero.png');
+  background-size: cover; /* Ensures the background image covers the entire container */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  color: #fff; /* Optional: Adjust text color for better readability on background image */
+ 
+
+  .container {
+    width: 1400px;
+    display: flex;
+    align-items: center;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      h1 {
+        font-size: 50px;
+
+        span {
+          font-style: italic;
+          font-weight: 300;
+        }
+      }
+
+      .search {
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content:flex-end;
+        overflow: hidden;
+        padding: 10px; /* Add padding for better spacing */
+      
+        .searchInput {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          flex-grow: 1; /* Allows the input to take up available space */
+          
+          img {
+            width: 20px;
+            height: 20px;
+          }
+      
+          input {
+            border: none;
+            outline: none;
+            flex-grow: 1; /* Allows the input to expand and fill available space */
+            padding: 8px 12px;
+            box-sizing: border-box; /* Ensure padding and border are included in the width */
+            font-size: 16px; /* Adjust font size for better alignment */
+            line-height: 1.5; /* Adjust line height for better vertical alignment */
+             /* Add padding for better text input */
+            
+            &::placeholder {
+              color: gray;
+              opacity: 1;
+              display: flex;
+              
+          
+            }
+
+          }
+        }
+      
+      
+
+        button {
+          width: 100px;
+          height: 50px;
+          margin-left: 10px;
+          background-color: #bf1d1d;
+          border: 2px solid #a31414; /* Add a border */
+        border-radius: 5px;
+        transition: background-color 0.3s, border-color 0.3s;
+
+          color: white;
+          cursor: pointer;
+          margin-left: 10px; /* Add margin to space out the button from the input */
+        }
+      }
+      
+      .popular {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        span {
+          width: max-content;
+        }
+
+        button {
+          width: max-content;
+          color: white;
+          border: 1px solid white;
+          padding: 5px 10px;
+          border-radius: 20px;
+          background-color: transparent;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .right {
+      height: 100%;
+      img {
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}

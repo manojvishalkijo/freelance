@@ -1,0 +1,132 @@
+/* General styles */
+.Signin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f1f1f1;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #17153B;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.quote {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-style: italic;
+  color: #555;
+}
+
+div {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  color: #2E236C;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 90%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #000000;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  width: 90%; /* Adjusted width to make space for button */
+}
+
+.show-password-toggle {
+  position: absolute;
+  top:67%;
+  right: 3px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  transform: translateY(-50%);
+  border: none;
+  height: 60%;
+  background: #403197;
+  cursor: pointer;
+  width: 20%;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.show-password-toggle:hover {
+  background-color: #403197;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #433D8B;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #2E236C;
+}
+
+button[type="submit"]:active {
+  background-color: #17153B;
+  transform: scale(0.98);
+}
+
+p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+}

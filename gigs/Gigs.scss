@@ -1,0 +1,137 @@
+.gigs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9; // Optional: add a background color for better contrast
+
+  .container {
+    width: 1400px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; // Increased gap for better spacing between sections
+
+    .breadcrumbs {
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: #555;
+    }
+
+    h1 {
+      margin-bottom: 20px; // Increased margin for better separation
+      font-size: 28px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 16px;
+      color: #666;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      .left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #555;
+
+        input {
+          padding: 10px; // Increased padding for better usability
+          border: 1px solid #ddd; // Lighter border for a more subtle look
+          border-radius: 5px;
+          outline: none;
+
+          &::placeholder {
+            color: #999;
+          }
+        }
+
+        button {
+          padding: 10px 15px; // Increased padding for better button appearance
+          background-color: #bf1d1d;
+          color: white;
+          border: none;
+          font-weight: 500;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #a41717; // Darker color for hover effect
+          }
+        }
+      }
+
+      .right {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .sortBy {
+          color: #555;
+          font-weight: 300;
+          display: flex;
+          align-items: center;
+        }
+
+        .sortType {
+          font-weight: 500;
+          color: #333;
+        }
+
+        img {
+          width: 20px; // Increased size for better visibility
+          cursor: pointer;
+        }
+
+        .rightMenu {
+          padding: 20px;
+          background-color: white;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          position: absolute;
+          top: 40px; // Adjusted for better positioning
+          right: 0;
+          z-index: 9;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          color: #555;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); // Added shadow for better visual separation
+
+          span {
+            cursor: pointer;
+            padding: 5px 0;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: #bf1d1d; // Change color on hover for interactivity
+            }
+          }
+        }
+      }
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+
+  .cardWrapper {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    max-width: calc(33.333% - 20px); // Ensure proper width calculation
+  }
+}

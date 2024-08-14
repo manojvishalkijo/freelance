@@ -1,0 +1,74 @@
+.myGigs {
+  display: flex;
+  justify-content: center;
+  color:black;
+
+  .container {
+    width: 1400px;
+    padding: 50px 0px;
+   
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      color:#c9cad9;
+
+      button {
+        background-color: #7796cb ;
+        color: white;
+        font-weight: 500;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+    }
+
+    table {
+      width: 100%;
+      padding:10px;
+      text-align:center;
+      border-radius:10px;
+      // background-color: black;
+      // color:white;
+
+      tr {
+        height: 50px;
+        th {
+          text-align: center;
+          background-color:#c9cad9
+        }
+        td {
+          background-color:#576490;
+          
+          sup{
+            font-size: 12px;
+          }
+          
+          .image {
+            width: 50px;
+            height: 25px;
+            object-fit: cover;
+          }
+
+          .delete {
+            width: 20px;
+            cursor: pointer;
+          }
+
+        }
+        &:nth-child(even) {
+          background-color: #4444440f;
+        }
+        &:nth-child(odd) {
+          background-color: #4444440f;
+        }
+      }
+    }
+    // .tab{
+    //   background-color:black;
+    //   color:white;
+    //   padding:20px;
+    //   background-image:linear-gradient(black,rgb(18, 18, 18));
+    // }
+  }
+}
